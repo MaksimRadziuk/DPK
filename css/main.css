@@ -4771,7 +4771,7 @@ footer .form-wrap form button {
 }
 .ittem_tab_block>.container>.ittem_tab_naw>ul {
 	margin: 0px;
-	padding-bottom: 740px;
+	/* padding-bottom: 740px; */
 	position: relative;
 }
 .ittem_tab_block>.container>.ittem_tab_naw>ul>li {
@@ -4878,12 +4878,10 @@ footer .form-wrap form button {
 	color: #5a3c23;
 	float: right;
 }
-.ittem_tab_info {
-
-}
 .ittem_tab_info>.left_block_cont {
 	width: 69.3%;
     float: left;
+    margin-bottom: 20px;
 }
 .ittem_tab_info>.right_block_cont {
 	float: left;
@@ -4926,6 +4924,7 @@ footer .form-wrap form button {
     top: auto;
     left: auto;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .left_cont_info {
     padding-left: 28px;

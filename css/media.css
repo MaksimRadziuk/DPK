@@ -592,6 +592,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+	.right_cont_info>div>p {
+	    width: 100%;
+	    text-align: left;
+	}
 	.ittem_tab_video>.slidet_tab_video .cont_tab_video>.video_block_tovar>.play-btn {
 		width: 100px;
 		height: 100px;
@@ -2011,6 +2015,7 @@
 	.ittem_tab_video>button {
 		margin: auto;
 		margin-top: 55px;
+		margin-bottom: 30px;
 	}
 	.ittem_tab_video>.slidet_tab_video .cont_tab_video>.text_video_block_tovar>h3 {
 		text-align: left;
