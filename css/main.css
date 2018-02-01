@@ -26,6 +26,20 @@ html {
 	overflow-x:hidden;
 }
 
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+button {
+	font-weight: 200;
+	letter-spacing: 1px;
+	background-color: transparent;
+	line-height: 15px;
+}
+
+p {
+	font-weight: 400;
+}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -1093,16 +1107,20 @@ ul, ol {
 	border: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	background: url(../img/heading-button.png) no-repeat center center / cover;
+	background: url(../img/heading-button.png);
+	background-repeat:  no-repeat;
+	background-position:  center center;
+	background-size:  cover;
 	position: absolute;
 	top: 90px;
 	left: 85px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
 	height: 40px;
 	width: 165px;
 	font-family: "RobotoBold";
 	color: #5a3c23;
+	min-width: 144px;
 }
 
 .heading:after {
@@ -1129,7 +1147,9 @@ ul, ol {
 	content: '';
 	top: 0;
 	left: 0;
-	background: url(../img/menu-green.png) no-repeat center top;
+	background-image: url(../img/menu-green.png);
+	background-repeat:  no-repeat;
+	background-position:  center top;
 	background-size: 100% 100px;
 	width: 100%;
 	height: 100px;
@@ -3630,6 +3650,7 @@ footer .feedback .phone:before {
 	margin-bottom: -10px;
 }
 footer .feedback .mail {
+	display: block;
 	font-size: 12px;
 	font-family: RobotoBold;
 	text-decoration: underline;
@@ -3733,8 +3754,7 @@ footer .form-wrap {
 	background-size: 100% 100%;
 	background-position: center center;
 	background-image: url(../img/footer-form-frame.png);
-	padding: 0 30px;
-	padding-top: 20px;
+	padding: 20px 30px;
 	margin-top: -20px;
 }
 footer .form-wrap .strange-2 {
@@ -3750,7 +3770,6 @@ footer .form-wrap form h3 {
 	font-size: 18px;
 	color: #fff;
 	font-family: PTsansBold;
-	margin-top: 15px;
 	margin-bottom: 5px;
 }
 footer .form-wrap form p {
@@ -3819,12 +3838,14 @@ footer .form-wrap form input:-ms-input-placeholder      {
 }
 footer .form-wrap form button {
 	position: relative;
-	left: calc(50% - 83px);
+	/* left: calc(50% - 83px); */
 	right: auto;
 	bottom: auto;
 	top: auto;
-	margin-bottom: 20px;
+	left: auto;
 	background-size: 100% 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -4535,7 +4556,7 @@ footer .form-wrap form button {
 .ittem_block>.container>.ittem_title {
 	color: #5a3c23;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 23px;
     border-left: solid 7px #d98117;
     line-height: 32px;
@@ -4608,16 +4629,17 @@ footer .form-wrap form button {
     width: 205px;
 }
 .ittem_info_block>.ittem_prise_block>.ittem_prise_text>button {
-    width: 205px;
+    width: 206px;
     height: 57px;
     background-image: url(../img/button_bg.png);
-    background-color: #0000;
     background-size: 100% 100%;
     color: #5a3c23;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 11px;
     padding: 0 46px;
     line-height: 16px;
+    letter-spacing: 0.8px;
+    font-family: RobotoBold;
 }
 .ittem_info_block>.ittem_prise_block>.ittem_prise_button {
 	clear: both;
@@ -4626,7 +4648,6 @@ footer .form-wrap form button {
     width: 165px;
     height: 39px;
     background-image: url(../img/button_bg.png);
-    background-color: #0000;
     background-size: 100% 100%;
     color: #5a3c23;
     font-weight: bold;
@@ -4639,7 +4660,6 @@ footer .form-wrap form button {
     width: 165px;
     height: 39px;
     background-image: url(../img/button_bg.png);
-    background-color: #0000;
     background-size: 100% 100%;
     color: #5a3c23;
     font-weight: bold;
@@ -4655,7 +4675,7 @@ footer .form-wrap form button {
 	z-index: 3;
 	-webkit-box-shadow: 0 0 17px #ccc;
 	        box-shadow: 0 0 17px #ccc;
-    background: #ffff;
+    background: #ffffff;
     padding: 9px;
     border-top: solid 2px #3ea26e;
 	top: 0;
@@ -4709,7 +4729,8 @@ footer .form-wrap form button {
     padding-left: 10%;
     color: #5a3c23;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 17px;
 }
 .img_sertifitate_slider {
 	width: 100%;
@@ -5170,7 +5191,8 @@ footer .form-wrap form button {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 150px;
 	height: 150px;
 	background-image: url(../img/play-btn-yellow.png);
